@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Rotating Meal Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <h1>Weekly Rotating Meal Menu</h1>
+    </header>
+    <main>
+        <section id="subscription-options">
+            <h2>Select Your Box</h2>
+            <form id="subscription-form">
+                <label>
+                    <input type="radio" name="box-size" value="6" checked>
+                    Box of 6 meals
+                </label>
+                <label>
+                    <input type="radio" name="box-size" value="12">
+                    Box of 12 meals
+                </label>
+                <button type="submit">Next</button>
+            </form>
+        </section>
+        <section id="meal-selection" class="hidden">
+            <h2>Select Your Meals</h2>
+            <div id="meal-categories">
+                <!-- Categories will be loaded here dynamically -->
+            </div>
+            <button id="submit-meals">Submit</button>
+        </section>
+        <section id="payment-section" class="hidden">
+            <h2>Payment Details</h2>
+            <form id="payment-form">
+                <div id="card-element"><!-- Stripe Element will be inserted here --></div>
+                <button id="submit-payment">Pay</button>
+                <div id="card-errors" role="alert"></div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

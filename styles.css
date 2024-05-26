@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#meal-categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 45%;
+    margin: 2%;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    margin-top: 0;
+}
+
+.meal-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.meal-item label {
+    flex: 1;
+}
+
+.meal-item input[type="checkbox"] {
+    margin-left: 1rem;
+}
+
+#payment-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#card-element {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
